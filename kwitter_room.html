@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Project-93</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel = "stylesheet" href = "kwitter.css" type = "text/css">
+        <script href = "kwitter_room.js"></script>
+    </head>
+    <body>
+        <button id = "button_logout" type = "button" class = "glyphicon glyphicon-log-out btn btn-danger" onclick = "logout()">Logout</button>
+        <br>
+        <hr>
+        <br>
+        <center>
+            <h1 class="header">	
+                Kwitter	
+                <sup>
+                    <img src="m2.png">
+                </sup>
+            </h1>
+            <h3 id = "user_name" class="color_white"></h3>
+            <div class="form-group input_div_room_page">
+                <label>#Add Room:</label>
+               <input class = "form-control" type = "text" id = "room_name" placeholder = "Room Name : ">
+            </div>
+            <button class="btn btn-success" onclick = "addRoom()" type= "button" >#Add Room</button>
+            <h3 class="color_white">TRENDING ROOMS</h3>
+            <div id = "output"></div>
+        </center>
+    </body>
+</html>
